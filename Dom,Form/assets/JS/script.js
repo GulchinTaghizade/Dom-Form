@@ -61,7 +61,7 @@ function validateAge(){
 }
 
 function validateForm(){
-    if (validateFirstName() && validateLastName() && validateEmail() && validateAge()) {
+    if (validateFirstName() || validateLastName() || validateEmail() || validateAge()) {
         document.getElementById("my-form").remove();
         userdatas.innerText += `First name : ${fname.value}\nLast Name : ${lname.value}\nEmail : ${email.value}\nAge : ${age.value}`;
         console.log(userdatas.innerText);
