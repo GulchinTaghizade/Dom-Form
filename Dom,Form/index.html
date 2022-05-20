@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/JS/script.js" defer ></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Dom,Form</title>
+</head>
+
+<body>
+    <h3 id="user-datas"></h3>
+    <form id="my-form" action="">
+        <h1>Contact Us</h1>
+        <label >Full name</label>
+        <input type="text" id="firstname" placeholder="First" onkeyup=" validateFirstName()">
+        <input type="text" id="lastname" placeholder="Last" onkeyup=" validateLastName()" ><br>   
+        <span class="error" id="nameerror"></span>
+
+        <label >Email</label>
+        <input type="text" id="email" onkeyup=" validateEmail()"><br>
+        <span class="error" id="emailerror"></span>
+
+        <label >Age</label>
+        <input type="text" id="age" onkeyup=" validateAge()"><br>
+        <span class="error" id="ageerror"></span><br>
+        
+        <button id="submit-btn" type="submit" onclick="return validateForm()">Submit</button><br>
+        <span class="error" id="mainerror"></span>
+    </form>
+</body>
+
+</html>

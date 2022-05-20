@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  background-color: #2DBAA6;
+  padding: 15px;
+  color: white;
+}
+
+form {
+  padding: 15px;
+  margin: 3px 10px;
+}
+
+form label {
+  margin: 10px 0;
+  display: block;
+}
+
+form label:after {
+  content: "*";
+  color: red;
+}
+
+form button {
+  width: 100px;
+  height: 25px;
+  font-size: large;
+  background-color: #2DBAA6;
+  border: none;
+  color: white;
+  margin-top: 15px;
+}
+
+form input {
+  height: 25px;
+}
+
+form .error {
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */

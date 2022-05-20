@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    background-color: #2DBAA6;
+    padding: 15px;
+    color: white;
+}
+form{
+    padding: 15px;
+    margin: 3px 10px;
+    
+    label{
+        margin: 10px 0;
+        display: block;
+        &:after{
+        content: "*";
+        color: red;
+        }
+    }
+    button{
+        width: 100px;
+        height: 25px;
+        font-size: large;
+        background-color: #2DBAA6;
+        border: none;
+        color: white;
+        margin-top: 15px;
+    }
+    input{
+        height: 25px;
+        
+    }
+    .error{
+        color: red;
+    }    
+    
+}
